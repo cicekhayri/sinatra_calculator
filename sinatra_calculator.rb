@@ -23,11 +23,12 @@ end
 get '/divide' do 
   @num1 = params[:num1]
   @num2 = params[:num2]
-    
-  @result = @num1.to_f / @num2.to_f
   
+  @result = @num1.to_f / @num2.to_f
+    
   erb :divide
 end
+
 
 get '/subtract' do
   @num1 = params[:num1]
